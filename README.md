@@ -1,4 +1,6 @@
-# Функциональное программирование на JS
+## Функциональное программирование на JS
+
+Лекций - 9, ЛабРаб - 9, КП, Экз  
 
 ---  
 
@@ -12,6 +14,7 @@ npm install
 
 Полезные материалы:  
 [Node.js API документация](https://nodejs.org/api/)  
+[Введение в Node JS](https://metanit.com/web/nodejs/1.1.php)  
 [Серверное программирование на Node.js](https://code.tutsplus.com/ru/tutorials/learning-server-side-javascript-with-nodejs--net-10044)  
 [Node.js для серверной разработки](https://habr.com/ru/company/ruvds/blog/345164/)  
 [Простое веб-приложение](https://umbrellait.com/ru/blog/how-to-build-a-simple-web-application-using-node-js/)  
@@ -19,15 +22,15 @@ npm install
 ---  
 
 Темы:  
-[Организация ввода/вывода](./theme-01-io/readme.md)  
-[Обработка массивов]()  
-[Файлы, объекты]()  
-[Экспертная система]()  
-[CSV]()  
-[JSON]()  
-[Парсер]()  
-[SQLite]()  
-[MySQL]()  
+1. [Организация ввода/вывода](./theme-01-io/readme.md)  
+2. [Обработка массивов]()  
+3. [Файлы, объекты]()  
+4. [Экспертная система]()  
+5. [CSV]()  
+6. [JSON]()  
+7. [Парсер]()  
+8. [SQLite]()  
+9. [MySQL]()  
 
 ---  
 
