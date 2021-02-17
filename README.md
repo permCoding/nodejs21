@@ -95,3 +95,23 @@ rl.on('close', () => {
 ```
 
 ---  
+
+ЛЕКЦИИ  
+
+Лекция 01 - 19.02.21  
+[Node.js и Функциональное программирование](https://show.zohopublic.com/publish/lgpre0a1454160d4141e8834b825916cafb31)  
+[Папка с презентациями](https://drive.google.com/drive/folders/1oIwYQdkQ0gjt4PXG1wOf-2JBIxu3rOUT?usp=sharing)  
+
+---  
+
+ЛАБОРАТОРКИ
+
+---  
+
+```
+
+```
+
+---  
+
+
