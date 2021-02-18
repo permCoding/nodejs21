@@ -13,6 +13,7 @@ npm install
 ---  
 
 Полезные материалы:  
+[Качаем платформу тут nodejs.org](https://nodejs.org/en/download/)  
 [Node.js API документация](https://nodejs.org/api/)  
 [Введение в Node JS](https://metanit.com/web/nodejs/1.1.php)  
 [Серверное программирование на Node.js](https://code.tutsplus.com/ru/tutorials/learning-server-side-javascript-with-nodejs--net-10044)  
@@ -22,6 +23,7 @@ npm install
 ---  
 
 Темы:  
+
 0. [Введение в Node.js](./theme-00-intro/)  
 1. [Организация ввода/вывода](./theme-01-io/)  
 2. [Обработка массивов]()  
