@@ -1,6 +1,15 @@
-## Функциональное программирование на JS
+## Функциональное программирование на JS  
+### Node.js  
 
 Лекций - 9, ЛабРаб - 9, КП, Экз  
+
+---  
+
+[Лекции дистанционно тут: BBB5](https://bbb5.psaa.ru/b/and-trp-fxt)  
+[Рейтинг группы ПИб-3]()  
+[Контрольные работы на Степике](https://stepik.org/64867/)  
+[Лабораторки - ПРАКТИКУМ](https://pcoding.ru/pdf/jsFuncCoding.pdf)  
+[Вопросы для собеседования](questions.md)  
 
 ---  
 
@@ -12,7 +21,7 @@ npm install
 
 ---  
 
-Полезные материалы:  
+Полезные материалы/links:  
 [Качаем платформу тут nodejs.org](https://nodejs.org/en/download/)  
 [Node.js API документация](https://nodejs.org/api/)  
 [Введение в Node JS](https://metanit.com/web/nodejs/1.1.php)  
@@ -34,67 +43,6 @@ npm install
 7. [Парсер]()  
 8. [SQLite]()  
 9. [MySQL]()  
-
----  
-
-Паттерн для решения задач на степике  
-Читает все вводимые строки (событие 'line') в один массив lines  
-По окончании ввода (событие 'close') ищет решение и выводит на экран  
-
-Для окончания ввода строк с клавиатуры в терминале введите:  
-* Ctrl-D в Linux  
-* Ctrl-C в Windows  
-
-```
-var readline = require('readline');
-
-var rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-let lines = [];
-
-rl.on('line', function(line){
-    lines.push(line);
-});
-
-rl.on('close', () => {
-    // тут ваше решение
-	result = lines[0];
-    console.log(result);
-});
-```
-
-Пример решения задачи  
-В данном примере вводятся n строк с целыми числами и вычисляется сумма чётных  
-
-```
-
-var readline = require('readline');
-
-var rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-let lines = [];
-
-rl.on('line', function(line){
-    lines.push(line);
-});
-
-rl.on('close', () => {
-    let n = parseInt(lines[0], 10);
-    let result = lines
-        .slice(1, n+1)
-        .map(x => +x)
-        .filter(x => x%2 == 0)
-        .reduce((acc, next) => acc + next, 0);
-    console.log(result);
-});
-  
-```
 
 ---  
 
