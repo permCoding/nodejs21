@@ -1,5 +1,7 @@
 // call vs apply
 
+// call - вызвать функцию и передать в неё аргументы
+
 let res, func1, func2, func3, obj1;
 
 func1 = (a, b) => a + b;
@@ -28,6 +30,8 @@ res = func2.call(obj1, 100, 200);
 console.log(res);
 
 console.log('= = = = = = = = = = = = = ');
+
+// apply - вызвать функцию и передать в неё массив аргументов
 
 res = func1.apply(null, [10, 20]);
 

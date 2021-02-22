@@ -10,6 +10,12 @@ npm install
 
 ---  
 
+Как узнать версии:
+
+```
+nodejs --version
+npm --version
+```
 
 ---  
 
