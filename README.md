@@ -11,17 +11,8 @@
 [Контрольные работы на Степике](https://stepik.org/64867/)  
 [Лабораторки - ПРАКТИКУМ](https://pcoding.ru/pdf/jsFuncCoding.pdf)  
 [Вопросы для собеседования](questions.md)  
-[HELPME](HELPME.md)  
-
----  
-
-Полезные материалы / links:  
-[Качаем платформу тут nodejs.org](https://nodejs.org/en/download/)  
-[Node.js API документация](https://nodejs.org/api/)  
-[Введение в Node JS](https://metanit.com/web/nodejs/1.1.php)  
-[Серверное программирование на Node.js](https://code.tutsplus.com/ru/tutorials/learning-server-side-javascript-with-nodejs--net-10044)  
-[Node.js для серверной разработки](https://habr.com/ru/company/ruvds/blog/345164/)  
-[Простое веб-приложение](https://umbrellait.com/ru/blog/how-to-build-a-simple-web-application-using-node-js/)  
+[HELP ME](HELPME.md)  
+[Полезные материалы / links](LINKS.md)  
 
 ---  
 
@@ -45,9 +36,15 @@
 Лекция 01 - 19.02.21  
 [Node.js и Функциональное программирование](https://show.zohopublic.com/publish/lgpre0a1454160d4141e8834b825916cafb31)  
 
+Лекция 02 - 26.02.21  
+[Обработка массивов](https://show.zohopublic.com/publish/lgpre0a1454160d4141e8834b825916cafb31)  
+
 ---  
 
 ЛАБОРАТОРКИ
+
+ЛАБРАБ-01  
+Задачи на Степике - [Тема "Обработка массивов"](https://stepik.org/lesson/416145/)  
 
 ---  
 
