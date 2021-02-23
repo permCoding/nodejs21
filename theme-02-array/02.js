@@ -1,4 +1,4 @@
-// map, filter, reduce
+// split map, filter, reduce, forEach
 
 let line = '2 3 5 10 8';
 
@@ -37,3 +37,15 @@ console.log(line
     .filter(x => x%2 == 0)
     .reduce((acc, next) => acc + next) // без инициализации
 );
+
+// = = = = = = = = = =
+
+line = '2 3 5 10 8';
+line
+    .split(' ')
+    .forEach(x => console.log(x));
+arr = [];
+line
+    .split(' ')
+    .forEach(x => arr.push(Number(x)));
+console.log(arr);
