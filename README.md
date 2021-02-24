@@ -79,17 +79,23 @@
 
 ---  
 
-ЛЕКЦИИ  
+## ЛЕКЦИИ  
 
 Лекция 01 - 19.02.21  
 [Node.js и Функциональное программирование](https://show.zohopublic.com/publish/lgpre0a1454160d4141e8834b825916cafb31)  
 
 Лекция 02 - 26.02.21  
-[Обработка массивов](https://show.zohopublic.com/publish/lgpre0a1454160d4141e8834b825916cafb31)  
+[Обработка массивов](https://github.com/permCoding/nodejs21/tree/main/theme-02-array)  
+[Введение](https://github.com/permCoding/nodejs21/tree/main/theme-00-intro)  
+
+Лекция 03 - 05.03.21  
+[Ввод-вывод](https://github.com/permCoding/nodejs21/tree/main/theme-01-io)  
+[Функции](https://github.com/permCoding/nodejs21/tree/main/theme-03-func)  
+[Объекты](https://github.com/permCoding/nodejs21/tree/main/theme-04-objects)  
 
 ---  
 
-ЛАБОРАТОРКИ
+## ЛАБОРАТОРКИ
 
 ЛАБРАБ-01  
 Задачи на Степике - [Тема "Обработка массивов"](https://stepik.org/lesson/416145/)  
