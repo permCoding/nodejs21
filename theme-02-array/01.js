@@ -30,6 +30,8 @@ console.log(
     .map((_, index) => ++index)
 );
 
+//   --x    x++
+
 console.log(
     [...Array(amount).keys()] // оператор spread ...
 );
@@ -48,5 +50,7 @@ console.log(arr);
 // = = = = = = = = = = 
 
 let arr1 = [1, 2, 3];
-let arr2 = [0, ...arr1, 4, 5]; // spread
+let arr2 = [0, arr1, 4, 5]; // spread
+let arr3 = [0, ...arr1, 4, 5]; // spread
 console.log(arr2);
+console.log(arr3);
