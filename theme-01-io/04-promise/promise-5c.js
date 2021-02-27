@@ -1,7 +1,7 @@
 fs = require('fs');
 
-fileNameIn = "09-in.txt";
-fileNameOut = "09-out.txt";
+fileNameIn = "in.txt";
+fileNameOut = "out.txt";
 
 let promise = new Promise((resolve, reject) => {
     fs.readFile( // асинхронное чтение
