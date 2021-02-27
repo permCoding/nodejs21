@@ -29,6 +29,7 @@ promise
                 'utf8', 
                 (err) => { 
                     if (err) reject(err);
+                    // для проверки установите запрет на запись файла
                     resolve(arr);
                 }
             );
