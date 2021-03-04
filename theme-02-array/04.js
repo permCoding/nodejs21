@@ -6,7 +6,7 @@ console.log('some =', arr.some(x => x%2 != 0));
 console.log('every =', arr.every(x => x%2 != 0));
 
 console.log(arr.keys()); // итератор
-// бывают ещё генераторы - это в другой раз ;)
+// бывают ещё генераторы - это в теме theme-03-func
 
 for (let key of arr.keys()) {
     console.log(`key = ${key}, value = ${arr[key]}`);

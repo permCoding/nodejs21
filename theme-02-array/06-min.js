@@ -1,4 +1,5 @@
 // как найти минимум в массиве
+// как отсортировать массив
 
 let example_1 = function (arr) {
     let min = arr[0];
@@ -40,6 +41,10 @@ let example_6 = function (arr) {
     return arr.reduce((a, b) => a < b? a: b);
 }
 
+let example_7 = function(arr) {
+    return arr.sort((a,b) => a-b)[0];
+}
+
 let arr = [8, 6, 1, 2, 5, 4];
 
 console.log(example_1(arr));
@@ -48,3 +53,4 @@ console.log(example_3(arr));
 console.log(example_4(arr));
 console.log(example_5(arr));
 console.log(example_6(arr));
+console.log(example_7(arr));
