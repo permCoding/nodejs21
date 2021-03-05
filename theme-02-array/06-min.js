@@ -1,9 +1,8 @@
 // как найти минимум в массиве
-// как отсортировать массив
 
 let example_1 = function (arr) {
     let min = arr[0];
-    for (let i = 2; i < arr.length; i++) {
+    for (let i = 1; i < arr.length; i++) {
         if (arr[i] < min) min = arr[i];
     }
     return min;
@@ -19,7 +18,7 @@ let example_3 = function (arr) {
 
 Array.prototype.min = function () {
     let min = this[0];
-    for (let i = 2; i < this.length; i++) {
+    for (let i = 1; i < this.length; i++) {
         if (this[i] < min) min = this[i];
     }
     return min;
@@ -46,6 +45,8 @@ let example_7 = function(arr) {
 }
 
 let arr = [8, 6, 1, 2, 5, 4];
+
+console.log(Math.max(1,55,0,-9,77));
 
 console.log(example_1(arr));
 console.log(example_2(arr));

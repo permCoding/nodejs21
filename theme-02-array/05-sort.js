@@ -43,19 +43,33 @@ let ex_04 = function (arr) {
     );
 }
 
+let ex_05 = function (arr) {
+    return arr.sort(
+        (a,b) => a[2] < b[2]? -1: a[2] == b[2]? 0: 1
+    );
+}
+
+// ex_03(students)
+//     .map(item => item[1] = 0)
+//     .forEach(item => console.log(item));
 ex_03(students).forEach(item => console.log(item));
 console.log('= = = = = = = = = =');
 
 ex_04(students).forEach(item => console.log(item));
 console.log('= = = = = = = = = =');
 
+ex_05(students).forEach(item => console.log(item));
+console.log('= = = = = = = = = =');
+
 // id, rating, name
 let objects = [
-    {'id': 0, 'rating': 2.4, name: 'Aaa'},
-    {'id': 1, 'rating': 3.3, name: 'Zzz'},
-    {'id': 2, 'rating': 1.9, name: 'Mmm'},
-    {'id': 3, 'rating': 2.0, name: 'Bbb'}
+    {'id': 0, 'rating': 2.4, 'name': 'Aaa'},
+    {'id': 1, 'rating': 3.3, 'name': 'Zzz'},
+    {'id': 2, 'rating': 1.9, 'name': 'Mmm'},
+    {'id': 3, 'rating': 2.0, 'name': 'Bbb'}
 ];
+
+console.log(`name = ${objects[0].name}`);
 
 console.log(
     objects.sort((a,b) => a.rating - b.rating)

@@ -18,6 +18,6 @@ console.log(arr.includes(5));
 console.log(arr.indexOf(4));
 console.log(arr.findIndex(x => (x%3 == 0) && (x > 0)));
 
-console.log(arr.slice(1,3));
-console.log(arr.splice(1,3));
+console.log(arr.slice(1,3)); // не включая правую границу
+console.log(arr.splice(1,3)); // включительно
 console.log(arr);
