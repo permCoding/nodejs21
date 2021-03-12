@@ -16,10 +16,10 @@ class Student {
 let stud = new Student('Петрович');
 console.log(stud); // через конструктор
 
-stud.name = ' Петро ';
+stud.name = ' Петро   ';
 console.log(stud); // через свойство
 
-stud._name = ' Петро ';
+stud._name = '    Петро ';
 console.log(stud); // через поле - оно public
 
 console.log(stud.name); // через свойство

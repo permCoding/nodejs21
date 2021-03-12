@@ -51,7 +51,7 @@ function ex_03() {
     let obj = {id: 1};
     let data = {group: 'ПИб-1', curator: 'Беляков'};
     let target = Object.assign(obj, source, data);
-
+    // ...array_of_objects
     console.log(JSON.stringify(target));
 }
 

@@ -4,7 +4,7 @@ class Student {
     #name = ''; // приватное поле
     constructor(line) {
         this.#name = line;
-    }    
+    }
     set_name(line) { // публичный метод
         this.#name = line.trim();
     }
