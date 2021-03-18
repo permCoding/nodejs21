@@ -48,7 +48,7 @@ function _sort2() {
     _
         .sortBy(_.sortBy(users, ['age']), obj => obj.name)
         .forEach(obj => console.log(obj));
-    
+
     console.log(users); // проверка сохранения чистоты функций
 }
 

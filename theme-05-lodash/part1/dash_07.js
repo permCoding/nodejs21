@@ -1,40 +1,13 @@
-// узнать место в отсортированном списке
+// _.zip() - массив массивов
 
 const _ = require('lodash');
 
+let colors = ['red', 'green', 'yellow', 'orange'];
+let hex_names = ['#FF0000', '#008000', '#FFFF00', '#FFA500'];
 
-const objects = [
-    {'x': 1},
-    {'x': 2},
-    {'x': 5},
-    {'x': 8}
-];
+let arr = _
+    .zip(colors, hex_names)
+    .sort((a, b) => a[0] < b[0]? -1: 1);
 
-
-console.log(
-    _
-        .sortedIndexBy(objects, {'x': 3}, obj => obj.x)
-);
-
-
-console.log(
-    _
-        .sortedIndexBy(objects, {'x': 9}, 'x')
-);
-
-// ====================
-
-const users = [
-    { name: 'fred',   age: 48 },
-    { name: 'barney', age: 34 },
-    { name: 'fred',   age: 40 },
-    { name: 'barney', age: 36 }
-];
-
-const user = { name: 'ilon', age: 37 }
-
-console.log(
-    _
-        .sortedIndexBy(
-            _.sortBy(users, obj => obj.age), user, 'age')
-);
+console.table(arr);
+console.log(arr);
