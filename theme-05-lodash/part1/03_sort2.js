@@ -39,15 +39,15 @@ function _sort1() {
  * обычный подход
  */
 function _sort2() {
-    _
+    console.log(_
         .sortBy(_.sortBy(users, obj => obj.name), obj => obj.age)
-        .forEach(obj => console.log(obj));
-    _
+    );
+
+    console.log(_.sortBy(_.sortBy(users, ['age']), ['name']));
+
+    console.log(_
         .sortBy(_.reverse(_.sortBy(users, obj => obj.age)), obj => obj.name)
-        .forEach(obj => console.log(obj));
-    _
-        .sortBy(_.sortBy(users, ['age']), obj => obj.name)
-        .forEach(obj => console.log(obj));
+    ); // для обратного порядка нужно повозиться
 
     console.log(users); // проверка сохранения чистоты функций
 }
@@ -57,18 +57,19 @@ function _sort2() {
  * lodash - по двум параметрам  
  * подход с параметрами сортировки  
  * и направлениями asc, desc  
+ * в двух нотациях  
  */
 function _sort3() {
-    _
-        .orderBy(users, ['name', 'age'], ['asc', 'desc'])
-        .forEach(obj => console.log(obj));
-
+    console.log(_.orderBy(users, ['name','age'], ['asc','desc']));
+    console.log(_(users).orderBy(['name','age'], ['asc','desc']).value());
     console.log(users); // проверка сохранения чистоты функций
 }
 
 
+console.log('\x1Bc');
+
 // _sort1();
 
-_sort2();
+// _sort2();
 
-// _sort3();
+_sort3();

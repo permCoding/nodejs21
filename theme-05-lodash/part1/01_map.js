@@ -87,6 +87,8 @@ function _reduce() {
 }
 
 
+console.log('\x1Bc');
+
 // _split();
 
 // _map();
