@@ -25,7 +25,7 @@ function _split() {
     console.log(
         _(line)
             .split(/,\s*/, 7)
-            .map(_.toNumber)
+            .map(_.toNumber(x))
             .filter(x => x%2 == 0)
             .join(', ')
     );
@@ -55,18 +55,18 @@ function _filter() {
     let check_odd = x => x%2 != 0;
     let res = _(arr)
         .filter(check_odd) // это генератор
-        // .toString(); // приведём к строке
-        .value(); // или к массиву
+        .toString(); // приведём к строке
+        // .value(); // или к массиву
     console.log(res);
 }
 
 
 function _filter_ex() {
-    let users = require('./users.json');
+    let users = require('./json/users.json');
     let res = _(users)
-        .filter(u => u.email.split('.').pop() == 'biz')
+        .filter(u => u.email.split('.').pop() === 'biz')
         .map(obj => _.zipObject(['name', 'email'], [obj.name, obj.email]))
-        .orderBy('name', 'asc')        
+        .orderBy('name', 'desc')        
         .value();
     console.table(res);
 }
@@ -83,10 +83,10 @@ console.log('\x1Bc');
 
 // _split();
 
-_map();
+// _map();
 
 // _filter();
 
 // _filter_ex();
 
-// _reduce();
+_reduce();
