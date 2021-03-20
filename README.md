@@ -7,7 +7,7 @@
 **useful links**  
 
 [Лекции дистанционно => BBB5](https://bbb5.psaa.ru/b/and-trp-fxt)  
-[Лабораторки](LABRAB.md)  
+[Лабораторки](/LABRAB/LABRAB.md)  
 [Рейтинг группы](https://docs.google.com/spreadsheets/d/1ATudxkG9-lWbwT8MFW0y6x7SapJQohH6qh_sCQ7Pi9w/edit?usp=sharing)  
 [Папка с презентациями](https://drive.google.com/drive/folders/1oIwYQdkQ0gjt4PXG1wOf-2JBIxu3rOUT?usp=sharing)  
 [Курсовой Проект](https://github.com/permCoding/nodejs21/tree/main/CourseProject)  
