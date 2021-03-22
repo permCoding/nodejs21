@@ -25,7 +25,7 @@ function _split() {
     console.log(
         _(line)
             .split(/,\s*/, 7)
-            .map(_.toNumber(x))
+            .map(_.toNumber) // x => _.toNumber(x)
             .filter(x => x%2 == 0)
             .join(', ')
     );
@@ -81,7 +81,7 @@ function _reduce() {
 
 console.log('\x1Bc');
 
-// _split();
+_split();
 
 // _map();
 
@@ -89,4 +89,4 @@ console.log('\x1Bc');
 
 // _filter_ex();
 
-_reduce();
+// _reduce();
