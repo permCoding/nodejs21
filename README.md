@@ -16,7 +16,7 @@
 [Вопросы для собеседования / Экзамен](questions.md)  
 [HELP ME](HELPME.md)  
 [Полезные ссылки](LINKS.md)  
-[Содержание по темам Лекций](content.md)  
+[Содержание по темам Учебной дисциплины](content.md)  
 
 ---  
 
@@ -41,17 +41,17 @@
 [lodash - part1, part2](https://github.com/permCoding/nodejs21/tree/main/theme-05-lodash)  
 ....Два синтаксиса lodash  
 
-Лекция 06 - 12.03.21  
+Лекция 06 - 26.03.21  
 [Ввод-вывод](https://github.com/permCoding/nodejs21/tree/main/theme-01-io)  
 ....Promise  
 
-Лекция 07 - 12.03.21  
+Лекция 07 - 02.04.21  
 ....SQLite  
 
-Лекция 08 - 12.03.21  
+Лекция 08 - 09.04.21  
 ....MySQL  
 
-Лекция 09 - 12.03.21  
+Лекция 09 - 16.04.21  
 [Функции](https://github.com/permCoding/nodejs21/tree/main/theme-03-func)  
 ....RegEx  
 
