@@ -9,3 +9,4 @@ function csv_to_json(nameFile, del = ',') {
 
 
 module.exports.csv_to_json = csv_to_json;
+// module.exports.to_json = csv_to_json;
