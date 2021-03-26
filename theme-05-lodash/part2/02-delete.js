@@ -2,7 +2,7 @@
 // задача объект из массива по признаку
 // _.remove() и _.pullAt() - мутабельные
 
-const ut = require('./ut01');
+const ut = require('./ut00');
 const _ = require('lodash');
 
 /**
@@ -16,9 +16,9 @@ const _ = require('lodash');
     
     let index = _
         .findIndex(arr, item => item.nameCur == name);
-    let obj = _.pullAt(arr, index);
-    // let nums = [index, index+1];
-    // let obj = _.pullAt(arr, ...nums);
+    // let obj = _.pullAt(arr, index);
+    let nums = [index, index+1];
+    let obj = _.pullAt(arr, ...nums);
     
     console.log(arr);
     console.log(obj); // тут кто был удалён
@@ -46,8 +46,8 @@ console.log('\x1Bc');
 let array = ut.csv_to_json('./csv/curators.csv');
 let nameCurator = 'Ухова'; // DELETE
 
-del_one(array, nameCurator);
-// del_all(array, nameCurator);
+// del_one(array, nameCurator);
+del_all(array, nameCurator);
 
 
 

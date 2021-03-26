@@ -3,7 +3,7 @@
 // WHERE sex = true 
 // ORDER BY age DESC, name ASC
 
-const ut = require('./ut01');
+const ut = require('./ut00');
 const _ = require('lodash');
 
 
@@ -67,8 +67,8 @@ console.log('\x1Bc\n = = = = = = = = = = =');
 let students = ut.csv_to_json('./csv/students.csv');
 
 // select_1(students);
-select_2(students);
-// select_3(students);
+// select_2(students);
+select_3(students);
 // select_4(students);
 // select_5(students);
 
