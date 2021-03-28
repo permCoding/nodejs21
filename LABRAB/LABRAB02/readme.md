@@ -67,17 +67,21 @@ sortBy(), orderBy()
 Пример итогового вывода:  
 
 ```js
-[
-    { color: 'aliceblue', rgb: [ 240, 248, 255 ] },
-    { color: 'antiquewhite', rgb: [ 250, 235, 215 ] },
-    { color: 'aqua', rgb: [ 0, 255, 255 ] },
-    { color: 'aquamarine', rgb: [ 127, 255, 212 ] },
-    { color: 'azure', rgb: [ 240, 255, 255 ] },
-    { color: 'beige', rgb: [ 245, 245, 220 ] },
-    { color: 'bisque', rgb: [ 255, 228, 196 ] },
-    { color: 'black', rgb: [ 0, 0, 0 ] },
-    ...
-]
+┌─────────┬────────────────────────┬───────────────────┐
+│ (index) │         color          │        rgb        │
+├─────────┼────────────────────────┼───────────────────┤
+│    0    │      'aliceblue'       │ [ 240, 248, 255 ] │
+│    1    │     'antiquewhite'     │ [ 250, 235, 215 ] │
+│    2    │         'aqua'         │  [ 0, 255, 255 ]  │
+│    3    │      'aquamarine'      │ [ 127, 255, 212 ] │
+│    4    │        'azure'         │ [ 240, 255, 255 ] │
+│    5    │        'beige'         │ [ 245, 245, 220 ] │
+│    6    │        'bisque'        │ [ 255, 228, 196 ] │
+│    7    │        'black'         │    [ 0, 0, 0 ]    │
+...
+│   147   │        'yellow'        │  [ 255, 255, 0 ]  │
+│   148   │     'yellowgreen'      │ [ 154, 205, 50 ]  │
+└─────────┴────────────────────────┴───────────────────┘
 ```
 
 ---  
@@ -161,15 +165,19 @@ sortBy(), orderBy()
 Пример итогового вывода:  
 
 ```js
-[
-    { color: 'aliceblue', hex_name: '#f0f8ff' },
-    { color: 'antiquewhite', hex_name: '#faebd7' },
-    { color: 'aqua', hex_name: '#00ffff' },
-    { color: 'aquamarine', hex_name: '#7fffd4' },
-    { color: 'azure', hex_name: '#f0ffff' },
-    { color: 'beige', hex_name: '#f5f5dc' },
-    { color: 'bisque', hex_name: '#ffe4c4' },
-    { color: 'black', hex_name: '#000000' },
+┌─────────┬────────────────────────┬───────────┐
+│ (index) │         color          │ hex_name  │
+├─────────┼────────────────────────┼───────────┤
+│    0    │      'aliceblue'       │ '#f0f8ff' │
+│    1    │     'antiquewhite'     │ '#faebd7' │
+│    2    │         'aqua'         │ '#00ffff' │
+│    3    │      'aquamarine'      │ '#7fffd4' │
+│    4    │        'azure'         │ '#f0ffff' │
+│    5    │        'beige'         │ '#f5f5dc' │
+│    6    │        'bisque'        │ '#ffe4c4' │
+│    7    │        'black'         │ '#000000' │
     ...
-]
+│   147   │        'yellow'        │ '#ffff00' │
+│   148   │     'yellowgreen'      │ '#9acd32' │
+└─────────┴────────────────────────┴───────────┘
 ```
