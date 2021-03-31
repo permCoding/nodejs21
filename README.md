@@ -42,11 +42,13 @@
 ....Два синтаксиса lodash  
 
 Лекция 06 - 26.03.21  
-[Ввод-вывод](https://github.com/permCoding/nodejs21/tree/main/theme-01-io)  
-....Promise  
+....lodash  
+[lodash - part2](https://github.com/permCoding/nodejs21/tree/main/theme-05-lodash)  
+
 
 Лекция 07 - 02.04.21  
-....SQLite  
+....Promise  
+[Ввод-вывод](https://github.com/permCoding/nodejs21/tree/main/theme-01-io)  
 
 Лекция 08 - 09.04.21  
 ....MySQL  
@@ -57,5 +59,6 @@
 
 
 ```  
+. . . . . . . . . . . . . . . . . . . . . . . .  
 . . . . . . . . . . . . . . . . . . . . . . . .  
 ```  
