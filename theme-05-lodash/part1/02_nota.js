@@ -73,15 +73,15 @@ function _filter_ex() {
 
 
 function _reduce() {
-    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let arr = [10, 2, 3, 4, 5, 6, 7, 8, 9];
     let add_odd = (acc, next) => next%2 != 0? acc + next: acc;
-    console.log(_(arr).reduce(add_odd));
+    console.log(_(arr).reduce(add_odd, 0)); // 0 - это инициализация acc
 }
 
 
 console.log('\x1Bc');
 
-_split();
+// _split();
 
 // _map();
 
@@ -89,4 +89,4 @@ _split();
 
 // _filter_ex();
 
-// _reduce();
+_reduce();
