@@ -1,3 +1,5 @@
+// чтение/запись через promises
+
 fs = require('fs');
 
 fileNameIn = "in.txt";
@@ -22,7 +24,7 @@ let promise = new Promise((resolve, reject) => {
 promise
     .then((arr) => {
         console.log(`Данные - ${arr.join(', ')}`);
-        return new Promise((resolve, reject) => {
+        let promise2 = new Promise((resolve, reject) => {
             fs.writeFile( // асинхронная запись
                 fileNameOut,
                 arr.join(', '),
@@ -33,7 +35,6 @@ promise
                 }
             );
         });
-    })
-    .then((amount) => 
-        console.log(`Записали данные в файл ${fileNameOut}\nВсего чисел - ${amount}`)
-    );
+        promise2
+            .then((amount) => console.log(`Записали данные в файл ${fileNameOut}\nВсего чисел - ${amount}`))
+    });
