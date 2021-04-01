@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
 let start = () => {
     connection.connect(err => {
         if (err) { console.error(err.message); }
-        else { console.log("\n\t___start___\n"); }
+        else { console.log("\t___start___"); }
     });
 };
 

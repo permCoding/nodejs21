@@ -24,3 +24,5 @@ connection.query("SELECT * FROM curators",
 });
 
 connection.end();
+
+console.log('\tdisconnection\n');
