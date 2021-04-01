@@ -1,5 +1,7 @@
 // организация функции async/await
 
+const { exec } = require('node:child_process');
+
 fs = require('fs');
 
 fileNameIn = "in.txt";
@@ -11,7 +13,7 @@ function getTxt(fileNameIn) {
     });
 };
 
-async function work() {
+async function exec() {
     console.log('___start___');
     let txt = await getTxt(fileNameIn); // только для промисов
     // так можно писать линейный код
@@ -19,4 +21,4 @@ async function work() {
     console.log('___stop___');
 }
 
-work();
+exec();
