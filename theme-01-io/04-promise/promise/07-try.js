@@ -17,8 +17,7 @@ let saveArr = function (fileNameOut, arr) {
             arr.join(', '),
             'utf8', 
             (err) => { 
-                if (err) reject(err);
-                // для проверки установите запрет на запись файла
+                if (err) reject(err); // для проверки установите запрет на запись файла
                 resolve();
             }
         );
@@ -43,8 +42,8 @@ async function exec(fileIn, fileOut) {
     try {
         await saveArr(fileOut, arr); // только для промисов
         console.log(`- записали массив [${arr}]\n- в файл ${fileOut}\n- всего чисел - ${arr.length}`);
-    } catch (error) {
-        console.error(`Проблемы с записью.\n`, error);
+    } catch (e) {
+        console.error(`Проблемы с записью.\n`, e);
     } finally {
         console.log('___ Работа завершена ___');
     };

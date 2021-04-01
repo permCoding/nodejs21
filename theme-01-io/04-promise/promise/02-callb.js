@@ -1,4 +1,6 @@
 // чтение/запись через callback functions
+// функция вызывается после получения результатов родительской функции
+// первым аргументом всегда error
 
 fs = require('fs');
 
@@ -9,6 +11,8 @@ fs.readFile( // асинхронное чтение
     fileNameIn, 
     'utf8', 
     (error, txt) => { // callback func
+        // if (error) console.error(error);
+        if (error) throw error;
         let arr = txt
             .split(/\r\n|\n/)[0]
             .trim()
@@ -22,7 +26,8 @@ fs.readFile( // асинхронное чтение
             fileNameOut,
             arr.join(', '),
             'utf8', 
-            (err) => { // callback func 
+            (err) => { // callback func
+                // if (err) console.error(err);
                 if (err) throw err;
                 let amount = arr.length;
                 console.log(`Записали данные в файл ${fileNameOut}\nВсего чисел - ${amount}`);

@@ -1,4 +1,4 @@
-// чтение/запись через promises + chain then, catch
+// promises + chain then, catch, finally
 
 fs = require('fs');
 
@@ -30,7 +30,7 @@ promise
                 arr.join(', '),
                 'utf8', 
                 (err) => { 
-                    if (err) reject(err);
+                    if (err) reject(err); // catch
                     // для проверки установите запрет на запись файла
                     resolve(arr);
                 }

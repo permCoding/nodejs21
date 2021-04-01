@@ -1,4 +1,5 @@
 // синхронное чтение - последовательное
+// и код можно писать линейно - просто
 
 fs = require('fs');
 
@@ -28,6 +29,4 @@ fs.writeFileSync( // синхронная запись
 );
 
 let amount = arr.length;
-console.log(
-    `Записали данные в файл ${fileNameOut}\nВсего чисел - ${amount}`
-);
+console.log(`Записали данные в файл ${fileNameOut}\nВсего чисел - ${amount}`);
