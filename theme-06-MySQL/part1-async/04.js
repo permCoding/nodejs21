@@ -1,4 +1,4 @@
-
+ // линейность внутри промиса
 
 const u = require('./modules/utils');
 

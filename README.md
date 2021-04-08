@@ -44,7 +44,8 @@
 Лекция 06 - 26.03.21  
 ....lodash  
 [lodash - part2](https://github.com/permCoding/nodejs21/tree/main/theme-05-lodash)  
-
+Лекция "Функциональная библиотека lodash"  
+Часть 2 Обработка табличной информации - https://youtu.be/IiWgq3PPfIM  
 
 Лекция 07 - 02.04.21  
 ....Promise  

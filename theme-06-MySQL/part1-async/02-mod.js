@@ -1,10 +1,10 @@
-
+// особенности асинхронности
 
 const u = require('./modules/utils');
 
 u.start();
 
-let arr = [];
+let arr = []; // тут будем хранить данные
 
 u.conn.query("SELECT * FROM curators",
     (err, results) => {
@@ -15,5 +15,5 @@ u.conn.query("SELECT * FROM curators",
 
 u.stop();
 
-console.log(`\tlen(arr) = ${arr.length}; arr = ${arr}`);
+console.log(`\tlen(arr) = ${arr.length}; arr = ${arr}`); // тут oops
 console.log('\tdisconnection');
