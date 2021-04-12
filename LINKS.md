@@ -15,6 +15,7 @@
 [Node.js для серверной разработки](https://habr.com/ru/company/ruvds/blog/345164/)  
 [Простое веб-приложение](https://umbrellait.com/ru/blog/how-to-build-a-simple-web-application-using-node-js/)  
 [Где брать JSON](https://jsonplaceholder.typicode.com/)  
+[Справочник по SQL](http://old.code.mu/sql/)  
 
 --- 
 

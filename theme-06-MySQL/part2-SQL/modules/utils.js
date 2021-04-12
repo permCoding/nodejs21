@@ -4,13 +4,18 @@ const fastcsv = require('fast-csv');
 const mysql = require("mysql2"); // npm i mysql2
 
 
-const conn = mysql.createConnection({
+const paramsDB = {
     host: "localhost",
     port: "3306",
     user: "soft0015",
     password: "9LlvnQos",
     database: "soft0015_faculty"
-}).promise();
+};
+
+
+function get_connection() {
+	return mysql.createConnection(paramsDB);
+}
 
 
 function csv_to_json(nameFile) {
@@ -27,6 +32,6 @@ function write_to_csv(array, nameFile) {
 }
 
 
-module.exports.conn = conn;
+module.exports.get_conn = get_connection;
 module.exports.csv_to_json = csv_to_json;
 module.exports.write_to_csv = write_to_csv;

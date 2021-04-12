@@ -1,6 +1,6 @@
 
 ```SQL
-INSERT INTO `students` (`nameStud`, `rating`, `gender`, `date`, `city`) 
+INSERT INTO `students` (`nameStud`, `rating`, `gender`, `birthDate`, `city`) 
 VALUES
 ('Мишкин', 217, 1, '2002-08-23', 'Кунгур'),
 ('Бортич', 224, 0, '2002-06-03', 'Лысьва'),

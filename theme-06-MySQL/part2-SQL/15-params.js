@@ -3,14 +3,15 @@
 
 const ut = require('./modules/utils');
 
+const conn = ut.get_conn();
 
 let query = "SELECT lastName, rating, city \
-FROM abiturs \
-WHERE gender = true AND city <> 'Пермь' \
-ORDER BY rating DESC, lastName ASC";
+FROM abiturs WHERE gender = ? LIMIT ?";
 
-ut.conn
-    .query(query)
+let params = ['false', 5]
+
+conn.promise()
+    .query(query, params)
     .then(([rows]) => console.table(rows))
     .catch((err) => { console.error(err) })
-    .then(ut.conn.end());
+    .then(conn.end());

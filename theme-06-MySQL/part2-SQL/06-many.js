@@ -6,7 +6,6 @@
 
 const ut = require('./modules/utils');
 
-
 let query_pattern = "INSERT INTO abiturs \
 (id, lastName, rating, gender, date, city) VALUES ";
 /*

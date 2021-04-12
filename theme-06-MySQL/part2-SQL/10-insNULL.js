@@ -2,14 +2,18 @@
 
 const ut = require('./modules/utils');
 
-let query = "INSERT INTO abiturs \
-(id, lastName, rating, gender, birthDate, city) VALUES ? ";
+function get_rows(array) {
+    return array.map(item => Object.values(item).slice(1));
+}
 
-let rows = [
-    ['1','Мишкин','217','1','2002-08-23','Кунгур'],
-    ['2','Бортич','224','0','2002-06-03','Лысьва'],
-    ['3','Деревянко','182','0','2002-02-20','Оса']
-];
+let array = ut.csv_to_json('./csv/abiturs.csv');
+
+let query = "INSERT INTO abiturs \
+(lastName, rating, gender, birthDate, city) VALUES ? "; // id, 
+
+let rows = get_rows(array);
+
+// console.log(rows);
 
 const conn = ut.get_conn();
 
