@@ -4,7 +4,7 @@
 3) можно подключить дополнительную библиотеку для асинхронного выполнения запросов
 и возможности потом зафиксировать COMMIT или откатить назад */
 
-const ut = require('./modules/utils');
+const ctj = require('./modules/utils').csv_to_json;
 
 let query_pattern = "INSERT INTO abiturs \
 (id, lastName, rating, gender, date, city) VALUES ";
@@ -14,7 +14,7 @@ let query_pattern = "INSERT INTO abiturs \
     (3, 'Петров', 197, true, '2003-01-01', 'Лысьва')
 */
 
-let array = ut.csv_to_json('./csv/abiturs.csv');
+let array = ctj('./csv/abiturs.csv');
 
 function ex_1() {
     console.log(array);

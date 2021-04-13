@@ -1,6 +1,6 @@
 // создадим через node.js и запрос таблицу
 
-const ut = require('./modules/utils');  
+const get_conn = require('./modules/utils').get_conn;
 
 let query_create = "CREATE TABLE `abiturs` ( \
     `id` INT NOT NULL AUTO_INCREMENT , \
@@ -11,7 +11,7 @@ let query_create = "CREATE TABLE `abiturs` ( \
     `city` VARCHAR(20) NULL , \
     PRIMARY KEY (`id`))";
 
-const conn = ut.get_conn();
+const conn = get_conn();
 
 conn.promise()
     .query(query_create)

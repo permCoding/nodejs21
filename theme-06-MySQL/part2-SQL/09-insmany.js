@@ -8,7 +8,7 @@ function get_rows(array) {
 
 let array = ut.csv_to_json('./csv/abiturs.csv');
 
-// сначала нужно truncate 
+// сначала нужно truncate - можно через phpMyAdmin пока
 
 let query = "INSERT INTO abiturs \
 (id, lastName, rating, gender, birthDate, city) VALUES ? ";

@@ -1,8 +1,10 @@
 // узнать количество записей в таблице
+// чтобы понять передачу параметров в [rows,fields]
+// смотри swap.js
 
-const ut = require('./modules/utils');
+const get_conn = require('./modules/utils').get_conn;
 
-const conn = ut.get_conn();
+const conn = get_conn();
 
 // conn.promise()
 //     .query("SELECT COUNT(*) FROM abiturs")

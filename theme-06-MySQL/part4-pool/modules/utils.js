@@ -2,7 +2,7 @@ const fs = require('fs');
 const csvjson = require('csvjson');
 const fastcsv = require('fast-csv');
 const mysql = require("mysql2"); // npm i mysql2
-const mysqlp = require("mysql2/promise");
+const mysqlp = require("mysql2/promise"); // как промисы
 
 const paramsDB = {
     host: "localhost",

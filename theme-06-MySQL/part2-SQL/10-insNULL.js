@@ -1,4 +1,4 @@
-// генерируем один запрос со множеством VALUES
+// генерируем один запрос со множеством VALUES с полем id NULL
 
 const ut = require('./modules/utils');
 

@@ -29,7 +29,7 @@ WHERE `studygroups`.`nameGroup` = 'ПИб-1' AND `studygroups`.`id` = `students`
 ORDER BY `students`.`lastName`";
 
 conn
-    .query(query4)
+    .query(query1)
     .then(([rows]) => console.table(rows))
     .catch((err) => { console.error(err) })
     .then(conn.end());

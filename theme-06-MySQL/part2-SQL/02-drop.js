@@ -1,11 +1,11 @@
-// теперь удалим таблицу через node.js и запрос
+// теперь удалим таблицу через node.js и запрос DROP
 // попробуйте удалить более одного раза
 
-const ut = require('./modules/utils');
+const get_conn = require('./modules/utils').get_conn;
 
 let query_drop = "DROP TABLE abiturs";
 
-const conn = ut.get_conn();
+const conn = get_conn();
 
 conn.promise()
     .query(query_drop)
