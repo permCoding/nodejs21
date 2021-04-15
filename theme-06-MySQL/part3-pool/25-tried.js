@@ -14,7 +14,7 @@ pool
     .execute(query_update, update_params)
     .then(result => {
         console.log('updated rows =', result[0].affectedRows);
-        return pool.query(query_select);
+        return pool.query(query_select); // возвращаем новый промис
     })
     .then(([rows]) => { pool.end(); return rows; })
     .then(rows => { console.table(rows); return rows; })

@@ -5,8 +5,8 @@
 const get_pool = require('./modules/utils').get_pool;
 
 let query_update = "UPDATE `abiturs` SET `rating`=? WHERE `lastName`=?";
-let update_params = [224, "Бортич"];
-let query_select = "SELECT lastName, DATE_FORMAT(birthDate, '%d.%m.%Y') as date \
+let update_params = [225, "Бортич"];
+let query_select = "SELECT lastName, rating, DATE_FORMAT(birthDate, '%d.%m.%Y') as date \
 FROM abiturs ORDER BY birthDate ASC";
 
 const pool = get_pool();
@@ -24,3 +24,4 @@ pool
     });
 
 // pool.end(); // выключим, чтобы запросы успели запускаться
+// нажать Ctrl+C или Ctrl+D для остановки

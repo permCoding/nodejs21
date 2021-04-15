@@ -11,5 +11,6 @@ rp(url)
 		console.log(data);
 	})
 	.catch(function (err) {
-		// error
-	});
+		console.error(err);
+	})
+	.finally(() => console.log('\tThe end...'));
