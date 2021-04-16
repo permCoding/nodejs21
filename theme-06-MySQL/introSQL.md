@@ -159,3 +159,10 @@ REFERENCES `studygroups`(`id`)
 ON DELETE RESTRICT 
 ON UPDATE RESTRICT;
 ```
+
+```SQL
+SELECT `abiturs`.`lastName`, `genders`.`nameGender`
+FROM `abiturs`
+INNER JOIN `genders` 
+ON `abiturs`.`gender` = `genders`.`id`
+```
