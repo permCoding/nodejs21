@@ -541,3 +541,30 @@ conn.promise()
 ```
 
 ---  
+
+### 22-params.js  
+
+В метод query() можно передвать один или два аргумента. Первый это SQL-запрос, второй - параметры для настройки этого запроса.  
+Такие параметры удобно использовать, когда нужно сам запрос настраивать динамически в зависимости от текущих условий.  
+В этом случае в теле SQL-запроса в позициях значений нужно оставлять знаки вопроса.  
+Впоследствии вместо них будут подставляться значения из массива, переданного в качестве второго параметра в метод query():  
+
+```js
+const ut = require('./modules/utils');
+
+const conn = ut.get_conn();
+
+let query = "SELECT lastName, rating, city \
+FROM abiturs WHERE gender = ? LIMIT ?";
+
+let params = ['false', 5]
+
+conn.promise()
+    .query(query, params)
+    .then(([rows]) => console.table(rows))
+    .catch((err) => { console.error(err) })
+    .then(conn.end());
+```
+
+---  
+
