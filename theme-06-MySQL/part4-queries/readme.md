@@ -1,7 +1,10 @@
-# SQL
+# Library mysql2
 
-Будем использовать MySQL 8  
-Документация [MySQL 8](https://dev.mysql.com/doc/refman/8.0/en/sql-data-manipulation-statements.html)  
+## Директория part4-queries - разбор программ  
+
+В данной директории приведены примеры программ по организации запросов к связанным таблицам и некоторые другие особенные запросы.  
+
+Будем использовать MySQL 8, документация [MySQL 8](https://dev.mysql.com/doc/refman/8.0/en/sql-data-manipulation-statements.html)  
 
 ## Введение в язык структурированных запросов SQL
 
