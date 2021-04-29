@@ -25,6 +25,96 @@ INSERT, UPDATE, DELETE
 Подмножеством команд DDL:  
 CREATE TABLE, ALTER TABLE, DROP TABLE, CREATE INDEX, ALTER INDEX, DROP INDEX  
 
+```SQL
+CREATE TABLE `abiturs` (
+    `id` INT NOT NULL AUTO_INCREMENT , 
+    `firstName` VARCHAR(20) NOT NULL , 
+    `lastName` VARCHAR(20) NOT NULL , 
+    `rating` INT NOT NULL , 
+    `city` VARCHAR(20) NULL , 
+    PRIMARY KEY (`id`)
+);
+```
+
+```SQL
+INSERT INTO abiturs (firstName, lastName, rating, city) 
+VALUES 
+    ('Женя','Мишкин','217','Кунгур'),
+    ('Роман','Бортич','224','Лысьва'),
+    ('Оксана','Деревянко','182','Оса'),
+    ('Анна','Столбова','194','Кунгур'),
+    ('Женя','Хомич','205','Кунгур'),
+    ('Коля','Круглов','191','Березники'),
+    ('Иван','Иванов','192','Кунгур'),
+    ('Петя','Петров','191','Кунгур'),
+    ('Женя','Сидоров','196','Кунгур'),
+    ('Егор','Капустин','196','Кунгур'),
+    ('Алиса','Томатова','201','Кунгур'),
+    ('Клава','Ежова','214','Лысьва'),
+    ('Женя','Микова','222','Пермь'),
+    ('Иаков','Мамин','199','Пермь'),
+    ('Стёпа','Комов','195','Пермь');
+```
+
+```SQL
+UPDATE `abiturs` SET `city`=1;
+```
+
+```SQL
+ALTER TABLE `abiturs`
+MODIFY `city` int NULL;
+```
+
+```SQL
+CREATE TABLE `cities` (
+    `id` INT NOT NULL AUTO_INCREMENT , 
+    `nameCity` VARCHAR(20) NOT NULL , 
+    PRIMARY KEY (`id`)
+);
+```
+
+```SQL
+INSERT INTO `cities` (`id`, `nameCity`) 
+VALUES 
+    (1, 'Березники'),
+    (2, 'Кунгур'),
+    (3, 'Лысьва'),
+    (4, 'Оса'),
+    (5, 'Пермь');
+```
+
+```SQL
+-- 1
+SELECT CONCAT_WS(' ', `abiturs`.`lastName`, `abiturs`.`firstName`) as abiturient, `abiturs`.`rating`, `cities`.`nameCity` 
+FROM `abiturs`, `cities` 
+WHERE `abiturs`.`keyCity` = `cities`.`idCity`
+ORDER BY `abiturs`.`rating` DESC
+LIMIT 10
+
+-- 2
+SELECT `cities`.`nameCity`, COUNT(`abiturs`.`keyCity`) AS cnt 
+FROM `abiturs`
+INNER JOIN `cities` ON `abiturs`.`keyCity`=`cities`.`idCity`
+GROUP BY `cities`.`nameCity`
+ORDER BY cnt DESC
+
+
+```
+
+```SQL
+ALTER TABLE `abiturs` ADD FOREIGN KEY (`keyCity`) 
+REFERENCES `cities`(`idCity`) 
+ON DELETE RESTRICT ON UPDATE RESTRICT;
+```
+
+```SQL
+ALTER TABLE `cities` CHANGE `id` `idCity` INT NOT NULL AUTO_INCREMENT;
+```
+
+
+
+---  
+
 Примеры команд:
 
 ```SQL
