@@ -1,8 +1,8 @@
 # Library mysql2
 
-## Директория part4-views - разбор представлений  
+## Директория part4-views - примеры работы с представлениями  
 
-В данной директории приведены примеры SQL-запросов и программ по работе с представлениями в MySQL через phpMyAdmin.  
+В данной директории приведены примеры SQL-запросов и программ по работе с представлениями в MySQL через phpMyAdmin и Node.js.  
 
 Будем использовать MySQL 8, документация [MySQL 8](https://dev.mysql.com/doc/refman/8.0/en/sql-data-manipulation-statements.html)  
 
