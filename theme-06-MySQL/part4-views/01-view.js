@@ -6,11 +6,11 @@ const conn = mysql.createConnection({
     user: "soft0015",
     password: "9LlvnQos",
     database: "soft0015_faculty"
-}).promise();
+});
 
 let query = "SELECT * FROM view_students";
 
-conn
+conn.promise()
     .query(query)
     .then(([rows]) => console.table(rows))
     .catch((err) => { console.error(err) })

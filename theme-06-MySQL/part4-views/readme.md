@@ -98,7 +98,7 @@ SELECT * FROM table_1
 
 ![struct_groups](./images/struct_groups.png)  
 
-а также установил внешний ключ для связи дочерней b родительской таблиц:  
+а также установил внешний ключ для связи дочерней и родительской таблиц:  
 ![foreign_key](./images/foreign_key.png)  
 
 После чего в Дизайнере можно увидеть схему базы данных примерно в таком виде:  
@@ -164,11 +164,11 @@ const conn = mysql.createConnection({
     user: "soft0015",
     password: "9LlvnQos",
     database: "soft0015_faculty"
-}).promise();
+});
 
 let query = "SELECT * FROM view_students";
 
-conn
+conn.promise()
     .query(query)
     .then(([rows]) => console.table(rows))
     .catch((err) => { console.error(err) })
