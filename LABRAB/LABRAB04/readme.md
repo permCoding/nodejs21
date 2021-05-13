@@ -81,31 +81,31 @@ task_02. Напишите программу, которая будет доба
 > Например, можно добавить такую запись:  
 > 2021-04-17,Александровск,elon musk,202  
 > Эти данные не надо брать из файла - их можно написать непосредственно в SQL-запросе.  
-> Пример [08-insert.js](https://github.com/permCoding/nodejs21/blob/main/theme-06-MySQL/introLibMySQL2.md#08-insertjs)  
+> Пример [08-insert.js](../../theme-06-MySQL/part2-SQL/readme.md#08-insertjs)  
 
 task_03. Напишите программу, которая будет удалять все записи из таблицы.  
 > Очистите таблицу.  
-> Пример [09-truncate.js](https://github.com/permCoding/nodejs21/blob/main/theme-06-MySQL/introLibMySQL2.md#09-truncatejs)  
+> Пример [09-truncate.js](../../theme-06-MySQL/part2-SQL/readme.md#09-truncatejs)  
 
 task_04. Напишите программу, которая будет считывать все данные из файла **data_set.csv** и добавлять их в виде записей в таблицу **data_set** базы данных.  
 
-> Пример [14-insmany.js](https://github.com/permCoding/nodejs21/blob/main/theme-06-MySQL/introLibMySQL2.md#14-insmanyjs)  
+> Пример [14-insmany.js](../../theme-06-MySQL/part2-SQL/readme.md#14-insmanyjs)  
 
 task_05. Напишите программу, которая будет узнавать через SQL-запрос и выводить на экран общее количество записей в таблице **data_set**.  
 
-> Пример [05-count.js](https://github.com/permCoding/nodejs21/blob/main/theme-06-MySQL/introLibMySQL2.md#05-countjs)  
+> Пример [05-count.js](../../theme-06-MySQL/part2-SQL/readme.md#05-countjs)  
 
 task_06. Напишите программу, которая будет выводить на экран все записи по клиенту 'laura abc'.  
 
 > Оцените время выполнения запроса и количество просмотренных записей.  
 > Добавьте индекс для столбца name и повторите запрос.  
 > Сравните время выполнения запроса и количество просмотренных записей с индексацией и без.  
-> Пример [22-params.js](https://github.com/permCoding/nodejs21/blob/main/theme-06-MySQL/introLibMySQL2.md#22-paramsjs)  
+> Пример [22-params.js](../../theme-06-MySQL/part2-SQL/readme.md#22-paramsjs)  
 
 task_07. Напишите программу, которая будет получать из отсортированного по полю **count** по убыванию списка записей только первые **20** и выводить на экран (пример см. ниже).  
 
 > node.js будет приводить столбец с датами к типу данных Date, но так как у нас в таблице нет времени, то попытка приведения будет давать примерно такой результат: 2020-03-18T19:00:00.000Z  
-> вы можете исправить вывод на экран средствами node.js или непосредственно в SQL-запросе функцией так: DATE_FORMAT(day, '%Y.%m.%d') - пример: [20-seldate.js](https://github.com/permCoding/nodejs21/blob/main/theme-06-MySQL/introLibMySQL2.md#20-seldatejs)  
+> вы можете исправить вывод на экран средствами node.js или непосредственно в SQL-запросе функцией так: DATE_FORMAT(day, '%Y.%m.%d') - пример: [20-seldate.js](../../theme-06-MySQL/part2-SQL/readme.md#seldatejs)  
 
 task_08. Напишите программу, которая будет выводить на экран все записи замеров для клиента с самым высоким **count**, отсортировав по дате замера по возрастанию (пример см. ниже).  
 
