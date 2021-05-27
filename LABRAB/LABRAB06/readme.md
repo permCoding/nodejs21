@@ -18,7 +18,8 @@
 Базу данных **labrab_06** нужно будет создать у себя в аккаунте на pgsha и в ней одну таблицу с данными, потом выполнить web-приложение, как описано в примере:  
 [theme-06-MySQL/part5-express/03-express](https://github.com/permCoding/nodejs21/tree/main/theme-06-MySQL/part5-express/03-express)  
 
-Вся теория изложена тут: (https://github.com/permCoding/nodejs21/tree/main/theme-06-MySQL/part5-express)  
+Вся теория изложена [тут](https://github.com/permCoding/nodejs21/tree/main/theme-06-MySQL/part5-express)  
+И в учебном видео: https://youtu.be/i7ndoX8dkcU  
 
 ---  
 
